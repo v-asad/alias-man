@@ -1,0 +1,28 @@
+{
+  "name": "alias-man",
+  "version": "0.1.0",
+  "description": "Interactive TUI for managing your zsh aliases",
+  "type": "module",
+  "bin": {
+    "alias-man": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x dist/cli.js",
+    "dev": "tsx src/cli.tsx",
+    "test": "node --test --import tsx test/store.test.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ink": "^7.0.5",
+    "react": "^19.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "@types/react": "^19.2.17",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
